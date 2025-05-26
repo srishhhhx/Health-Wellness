@@ -125,16 +125,12 @@ pip
 
 - Steps:
 
-### 1. Clone the Repo
-
 
 ```bash
 
 # 1. Clone the Repo
 
 git clone https://github.com/srishhhhx/Health-Wellness.git
-cd Health-Wellness/app
-
 
 # 2. Create a Virtual Environment
 
@@ -147,4 +143,5 @@ pip install -r requirements.txt
 
 # 4. Run the Streamlit App
 
+cd Health-Wellness/app
 streamlit run app.py
