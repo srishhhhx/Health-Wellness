@@ -58,8 +58,6 @@ Long-term risks of chronic conditions (e.g., heart disease, diabetes)
 
 
 [Walker, M. (2017). *Why We Sleep* – Sleep's central role in well-being](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2656292/)
-[Harvard Medical School – Sleep and Mental Health](https://www.health.harvard.edu/newsletter_article/sleep-and-mental-health)
-
 
 2. Physical Activity (Steps) Is Important but Secondary to Recovery
 While regular activity is a strong predictor of overall wellness and longevity, its benefits are compromised if recovery (via sleep) is insufficient.
@@ -83,17 +81,15 @@ Using the synthetic dataset with labeled scores, multiple regression models were
 
 Models Tested:
 
-Linear Regression – fast but too simplistic for non-linear interactions.
+- Linear Regression – fast but too simplistic for non-linear interactions.
 
-Decision Tree Regressor – interpretable but prone to overfitting.
+- Decision Tree Regressor – interpretable but prone to overfitting.
 
-Random Forest Regressor – best generalization, low MSE, handles edge cases well.
+- Random Forest Regressor – best generalization, low MSE, handles edge cases well.
 
 Why Random Forest?
 
-Captures feature interactions without manual tuning and performs better on mixed linear/non-linear relationships
-
-The selected Random Forest Regressor is integrated in the dashboard to provide real-time predictions.
+Captures feature interactions without manual tuning and performs better on mixed linear/non-linear relationships.The selected Random Forest Regressor is integrated in the dashboard to provide real-time predictions.
 
 Notebook : [Model_training](notebooks/Model_training.ipynb)
 
@@ -131,22 +127,24 @@ pip
 
 ### 1. Clone the Repo
 
-git clone https://github.com/srishhhhx/Health-Wellness.git
 
+```bash
+git clone https://github.com/srishhhhx/Health-Wellness.git
 cd Health-Wellness/app
+
 
 ### 2. Create a Virtual Environment
 
-
+```bash
 python -m venv venv
-
 source venv/bin/activate     # On Windows: venv\Scripts\activate
 
 ### 3. Install Required Packages
 
-
+```bash
 pip install -r requirements.txt
 
 ### 4. Run the Streamlit App
 
+```bash
 streamlit run app.py
