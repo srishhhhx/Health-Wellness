@@ -129,22 +129,22 @@ pip
 
 
 ```bash
+
+# 1. Clone the Repo
+
 git clone https://github.com/srishhhhx/Health-Wellness.git
 cd Health-Wellness/app
 
 
-### 2. Create a Virtual Environment
+# 2. Create a Virtual Environment
 
-```bash
 python -m venv venv
 source venv/bin/activate     # On Windows: venv\Scripts\activate
 
-### 3. Install Required Packages
+# 3. Install Required Packages
 
-```bash
 pip install -r requirements.txt
 
-### 4. Run the Streamlit App
+# 4. Run the Streamlit App
 
-```bash
 streamlit run app.py
