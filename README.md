@@ -119,7 +119,7 @@ Combining rule-based logic with a machine learning model offers the best of both
 
 ## Running the App Locally
 
-Prerequisites:
+- Prerequisites:
 
 
 Python 3.8+
@@ -127,7 +127,7 @@ Python 3.8+
 pip
 
 
-Steps:
+- Steps:
 
 ### 1. Clone the Repo
 
@@ -140,7 +140,7 @@ cd Health-Wellness/app
 
 python -m venv venv
 
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+source venv/bin/activate     # On Windows: venv\Scripts\activate
 
 ### 3. Install Required Packages
 
@@ -148,6 +148,5 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 
 ### 4. Run the Streamlit App
-
 
 streamlit run app.py
