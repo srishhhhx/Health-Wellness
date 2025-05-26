@@ -1,4 +1,4 @@
-# 🌿 Wellness Score Calculator
+# Wellness Score Calculator
 
 Track your daily wellness using a simple and interactive tool. The **Wellness Score Calculator** is a lightweight app that calculates a daily wellness score (0–100) using three metrics: **Sleep Hours**, **Daily Steps**, and **Mood Rating**. It combines rule-based scoring logic with a trained ML model (Random Forest) and displays results in a beautiful interactive dashboard.
 
@@ -6,7 +6,7 @@ Track your daily wellness using a simple and interactive tool. The **Wellness Sc
 
 ---
 
-## 🧠 Project Motivation
+## Project Motivation
 
 Modern life demands simple, quick, and personalized wellness insights. This app aims to:
 - Quantify daily wellness in a meaningful, interpretable way
@@ -32,35 +32,44 @@ The ML model was trained on synthetic data generated using this logic, allowing 
 
 ## 💡 Features
 
-- 📈 Interactive Streamlit dashboard
-- 🎯 Instant feedback via real-time wellness score (gauge)
-- ✅ Slider inputs for:
+- Interactive Streamlit dashboard
+- Instant feedback via real-time wellness score (gauge)
+- Slider inputs for:
   - Sleep Hours (0–12 hrs)
   - Daily Steps (0–25,000)
   - Mood Rating (1–10)
-- 🌱 Personalized health tips and motivation
-- 🔒 All processing is local — no sensitive data collected
-
----
-
-## 🖥️ Dashboard Preview
-
-![Dashboard Preview](app/assets/dashboard.png)
+- Personalized health tips and motivation
+- All processing is local — no sensitive data collected
 
 ---
 
 
----
+## Running the App Locally
 
-## 🚀 Getting Started
+Follow these steps to launch the Wellness Score Calculator on your local machine:
+
+Prerequisites:
+
+Python 3.8+
+pip
 
 ### 1. Clone the Repo
 
 ```bash
 git clone https://github.com/srishhhhx/Health-Wellness.git
 cd Health-Wellness
+cd app
+
+### 2. Create a Virtual Environment
+
+python -m venv venv
+source venv/bin/activate  # On Windows use: venv\Scripts\activate
+
+### 3. Install Required Packages
 
 pip install -r requirements.txt
+
+### 4.Run the Streamlit App
 
 streamlit run app/app.py
 
