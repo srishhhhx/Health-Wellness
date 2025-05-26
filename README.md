@@ -18,21 +18,16 @@ Since real-world wellness datasets with labeled scores are scarce, a synthetic d
 
 Inputs Simulated:
 
-Sleep Hours: 0–12 hours
-
-Daily Steps: 0–25,000 steps
-
-Mood Rating: 1–10 scale
+- Sleep Hours: 0–12 hours
+- Daily Steps: 0–25,000 steps
+- Mood Rating: 1–10 scale
 
 Edge Cases Handled:
 
-Extremely low/high sleep durations (e.g., 0, 2, 12 hrs)
-
-Step counts near inactivity (e.g., 0–500) and excessive activity
-
-Mood extremes (1–2 for bad, 9–10 for excellent)
-
-Combination scenarios (e.g., good mood with low sleep, or high steps with poor mood)
+- Extremely low/high sleep durations (e.g., 0, 2, 12 hrs)
+- Step counts near inactivity (e.g., 0–500) and excessive activity
+- Mood extremes (1–2 for bad, 9–10 for excellent)
+- Combination scenarios (e.g., good mood with low sleep, or high steps with poor mood)
 
 Each synthetic record was scored using a rule-based function (details below) to create labeled training data for the ML model.
 
@@ -128,20 +123,23 @@ Prerequisites:
 
 
 Python 3.8+
+
 pip
 
 
 Steps:
+
 ### 1. Clone the Repo
 
-
 git clone https://github.com/srishhhhx/Health-Wellness.git
+
 cd Health-Wellness/app
 
 ### 2. Create a Virtual Environment
 
 
 python -m venv venv
+
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 ### 3. Install Required Packages
